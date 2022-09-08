@@ -1,0 +1,57 @@
+<p>home works!</p>
+
+<div class="example-wrapper">
+    <div style="margin-bottom: 5px;">
+      <form [formGroup]="this.s3protalFormControl">
+        Search By Prefix <input type="text" id="searchS3Prefix" formControlName="searchPrefix">
+        <button type="button" [disabled]="!this.s3protalFormControl.valid" (click)="searchByPrefix()">Search</button>
+        <br>
+        Create Empty Folder: <input  type="text" id="uploadPath" formControlName="existingPath" [disabled]='true'> / 
+        <input  type="text" id="uploadPath" formControlName="key">
+        <button type="button" [disabled]="!this.s3protalFormControl.valid" (click)="createEmptyObject()">Create Folder</button>
+        <br>
+        Upload A File To Folder: 
+        <input  type="text" id="uploadFilePath" formControlName="existingUploadPath" [disabled]='true'>
+        Select A File: <input id="file-input" #Image type="file" (change)="handleFileInput($event)" />
+        <button type="button" [disabled]="!this.s3protalFormControl.valid" (click)="onUploadFile()">Upload</button>
+        
+       
+      </form>
+      
+    </div>
+    <div style="margin-bottom: 5px;">
+      
+      <button (click)="removeSelected()">Remove Selected</button>
+    </div>
+    <!-- <ag-grid-angular
+      style="width: 100%; height: 100%;"
+      class="ag-theme-alpine"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [autoGroupColumnDef]="autoGroupColumnDef"
+      [rowData]="rowData"
+      [treeData]="true"
+      [animateRows]="true"
+      [groupDefaultExpanded]="groupDefaultExpanded"
+      [getDataPath]="getDataPath"
+      [getRowId]="getRowId"
+      (gridReady)="onGridReady($event)"
+    ></ag-grid-angular> -->
+  </div>
+
+  <ag-grid-angular
+  style="width: 1024px; height: 500px;"
+  class="ag-theme-alpine"
+  [columnDefs]="columnDefs"
+  [defaultColDef]="defaultColDef"
+  [autoGroupColumnDef]="autoGroupColumnDef"
+  [rowData]="rowData"
+  [treeData]="true"
+  [animateRows]="true"
+  [rowSelection]='rowSelection'
+  [groupDefaultExpanded]="groupDefaultExpanded"
+  (selectionChanged)="onSelectionChanged($event)"
+  [getDataPath]="getDataPath"
+  [getRowId]="getRowId"
+  (gridReady)="onGridReady($event)"
+></ag-grid-angular>
