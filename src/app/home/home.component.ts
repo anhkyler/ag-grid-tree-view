@@ -13,7 +13,7 @@ import {
 } from 'ag-grid-community';
 import 'ag-grid-enterprise';
 import {AwsSimpleServiceService} from '../services/aws-s3/aws-simple-service.service';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import {DownloadButtonRendererComponent} from './download-renderer.component';
 import { saveAs } from 'file-saver';
 import * as FileSaver from 'file-saver';
@@ -27,7 +27,7 @@ declare var window: any;
 export class HomeComponent implements OnInit {
   key: String | undefined;
   // existingPath: String | undefined;
-  s3protalFormControl!: FormGroup;
+  s3protalFormControl!: UntypedFormGroup;
   fileToUpload: File | null = null;
   public rowSelection: 'single' | 'multiple' = 'multiple';
   public defaultColDef: ColDef = {
@@ -56,7 +56,7 @@ export class HomeComponent implements OnInit {
   };
   fileUpload: File | undefined;
   constructor(private awsSimpleServiceService: AwsSimpleServiceService,
-    private fb:FormBuilder) { }
+    private fb:UntypedFormBuilder) { }
 
   ngOnInit(): void {
     this.getData();
@@ -65,10 +65,10 @@ export class HomeComponent implements OnInit {
 
   createForm(){
     this.s3protalFormControl = this.fb.group({
-      searchPrefix: new FormControl(''),
-      existingPath: new FormControl(''),
-      key: new FormControl(''),
-      existingUploadPath: new FormControl('')
+      searchPrefix: new UntypedFormControl(''),
+      existingPath: new UntypedFormControl(''),
+      key: new UntypedFormControl(''),
+      existingUploadPath: new UntypedFormControl('')
     });
   }
 
