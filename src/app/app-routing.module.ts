@@ -7,9 +7,10 @@ import { MonthlyReportsComponent } from './monthly-reports/monthly-reports.compo
 import { ReportsComponent } from './reports/reports.component';
 
 const routes: Routes = [
-    {path:'',redirectTo:"/home", pathMatch:"full"},
-    {path:'home',component:HomeComponent},
+    {path:'',redirectTo:"/reports", pathMatch:"full"},//set the default page when loading application
+
     {path:'reports',component:ReportsComponent},
+    {path:'home',component:HomeComponent},
     {path:'dailyreports',component:DailyReportsComponent},
     {path:'monthlyreports',component:MonthlyReportsComponent},
     {path:'account',component:AccountComponent}
