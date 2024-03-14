@@ -5,9 +5,9 @@
 /* Quartz Theme Specific CSS */
 /* @import 'ag-grid-community/styles/ag-theme-quartz.css'; */
 /* in css */
-/* @import "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap"; */
+@import "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap";
 /* is css */
-/* @import "https://fonts.googleapis.com/css?family=Roboto"; */
+@import "https://fonts.googleapis.com/css?family=Roboto";
 @import '../node_modules/ag-grid-community/styles/ag-theme-quartz.css';
 @import '../node_modules/ag-grid-community/styles/ag-grid.css';
 
