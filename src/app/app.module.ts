@@ -16,7 +16,8 @@ import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {DownloadButtonRendererComponent} from './home/download-renderer.component';
-
+import { NavbarMeuComponent } from './navbar-meu/navbar-meu.component';
+import { FooterMenuComponent } from './footer-menu/footer-menu.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,9 @@ import {DownloadButtonRendererComponent} from './home/download-renderer.componen
     LogoutComponent,
     AccountComponent,
     SwitchAccountComponent,
-    DownloadButtonRendererComponent
+    DownloadButtonRendererComponent,
+    NavbarMeuComponent,
+    FooterMenuComponent
   ],
   imports: [
     BrowserModule,
