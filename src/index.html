@@ -82,24 +82,37 @@
         <button type="button" class="usa-nav__close">
           <img src="/assets/img/usa-icons/close.svg" role="img" alt="Close" />
         </button>
+        
+        <section aria-label="Search component">
+          <form class="usa-search usa-search--small" role="search">
+            <label class="usa-sr-only" for="search-field">Search</label>
+            <input class="usa-input" id="search-field" type="search" name="search" />
+            <button class="usa-button" type="submit">
+              <img src="/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+            </button>
+          </form>
+        </section>
+      </nav>
+    </div>
+  </header>
+  <header class="usa-header usa-header--basic">
+    <div class="usa-nav-container">
+      <nav aria-label="Primary navigation" class="usa-nav hs-justify-content">
         <ul class="usa-nav__primary usa-accordion">
           <li class="usa-nav__primary-item">
             <button type="button" class="usa-accordion__button usa-nav__link usa-current" aria-expanded="false"
               aria-controls="basic-nav-section-one">
-              <span>&lt;Current section&gt;</span>
+              <span>Small Business</span>
             </button>
             <ul id="basic-nav-section-one" class="usa-nav__submenu">
               <li class="usa-nav__submenu-item">
-                <a href="javascript:void(0);"><span>&lt;Navigation link&gt;</span></a>
+                <a href="javascript:void(0);"><span>Register your small business</span></a>
               </li>
               <li class="usa-nav__submenu-item">
-                <a href="javascript:void(0);"><span>&lt;Navigation link&gt;</span></a>
+                <a href="javascript:void(0);"><span>Forcast of contracting opportunities</span></a>
               </li>
               <li class="usa-nav__submenu-item">
-                <a href="javascript:void(0);"><span>&lt;Navigation link&gt;</span></a>
-              </li>
-              <li class="usa-nav__submenu-item">
-                <a href="javascript:void(0);"><span>&lt;Navigation link&gt;</span></a>
+                <a href="javascript:void(0);"><span>Small business Resource</span></a>
               </li>
             </ul>
           </li>
@@ -124,15 +137,7 @@
             <a href="javascript:void(0);" class="usa-nav-link"><span>Contact</span></a>
           </li>
         </ul>
-        <section aria-label="Search component">
-          <form class="usa-search usa-search--small" role="search">
-            <label class="usa-sr-only" for="search-field">Search</label>
-            <input class="usa-input" id="search-field" type="search" name="search" />
-            <button class="usa-button" type="submit">
-              <img src="/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
-            </button>
-          </form>
-        </section>
+        
       </nav>
     </div>
   </header>
