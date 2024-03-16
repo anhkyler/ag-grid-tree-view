@@ -18,6 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {DownloadButtonRendererComponent} from './home/download-renderer.component';
 import { NavbarMeuComponent } from './navbar-meu/navbar-meu.component';
 import { FooterMenuComponent } from './footer-menu/footer-menu.component';
+import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,9 @@ import { FooterMenuComponent } from './footer-menu/footer-menu.component';
     AgGridModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TypeaheadModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

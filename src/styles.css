@@ -30,3 +30,12 @@
 .hs-justify-content{
   justify-content: start !important;;
 }
+
+
+.ag-theme-quartz .ag-tabs-header{
+  background-color: #e6eff8;
+}
+
+.ag-theme-quartz {
+  --ag-card-radius: 0px;
+}
