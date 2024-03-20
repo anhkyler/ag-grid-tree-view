@@ -17,6 +17,7 @@ import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } 
 import {DownloadButtonRendererComponent} from './download-renderer.component';
 import { saveAs } from 'file-saver';
 import * as FileSaver from 'file-saver';
+import { Route, Router } from '@angular/router';
 declare var window: any;
 
 @Component({
@@ -56,11 +57,16 @@ export class HomeComponent implements OnInit {
   };
   fileUpload: File | undefined;
   constructor(private awsSimpleServiceService: AwsSimpleServiceService,
-    private fb:UntypedFormBuilder) { }
+    private fb:UntypedFormBuilder, private router:Router
+    ) { }
 
   ngOnInit(): void {
     this.getData();
     this.createForm();
+  }
+
+  gotoreportpage(){
+    this.router.navigateByUrl('/dailyreports');
   }
 
   createForm(){

@@ -19,7 +19,10 @@ import {DownloadButtonRendererComponent} from './home/download-renderer.componen
 import { NavbarMeuComponent } from './navbar-meu/navbar-meu.component';
 import { FooterMenuComponent } from './footer-menu/footer-menu.component';
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     SwitchAccountComponent,
     DownloadButtonRendererComponent,
     NavbarMeuComponent,
-    FooterMenuComponent
+    FooterMenuComponent,
+    PageNotFoundComponent,
+    PageHeaderComponent
   ],
   imports: [
     BrowserModule,
