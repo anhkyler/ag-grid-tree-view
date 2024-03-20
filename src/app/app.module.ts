@@ -22,7 +22,13 @@ import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
-
+import { RegisterSmallBusinessComponent } from './small-business/register-small-business/register-small-business.component'
+import { ForcastContractingComponent } from './small-business/forcast-contracting/forcast-contracting.component';
+import { SmallBusinessResourceComponent } from './small-business/small-business-resource/small-business-resource.component';
+import { DesignAndConstructionComponent } from './real-estate/design-and-construction/design-and-construction.component';
+import { FacilityManagementComponent } from './real-estate/facility-management/facility-management.component';
+import { OurPropertiesComponent } from './real-estate/our-properties/our-properties.component';
+import { GeneralContactInformationComponent } from './contact/general-contact-information/general-contact-information.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +45,14 @@ import { PageHeaderComponent } from './page-header/page-header.component';
     NavbarMeuComponent,
     FooterMenuComponent,
     PageNotFoundComponent,
-    PageHeaderComponent
+    PageHeaderComponent,
+    RegisterSmallBusinessComponent,
+    ForcastContractingComponent,
+    SmallBusinessResourceComponent,
+    FacilityManagementComponent,
+    OurPropertiesComponent,
+    DesignAndConstructionComponent,
+    GeneralContactInformationComponent
   ],
   imports: [
     BrowserModule,

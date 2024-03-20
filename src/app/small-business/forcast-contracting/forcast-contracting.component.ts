@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-forcast-contracting',
-  standalone: true,
-  imports: [],
   templateUrl: './forcast-contracting.component.html',
   styleUrl: './forcast-contracting.component.css'
 })
-export class ForcastContractingComponent {
+export class ForcastContractingComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
 }
